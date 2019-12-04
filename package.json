@@ -1,0 +1,34 @@
+{
+    "name": "@avon-maps/eslint-config-avon-maps",
+    "version": "0.0.1",
+    "description": "Common configuration files for eslint",
+    "main": "index.js",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/avonmaps/eslint-config-avon-maps.git"
+    },
+    "publishConfig": {
+        "registry": "https://nexus.blackbelt.cloud/repository/npm-avon-maps/"
+    },
+    "keywords": [
+        "eslint",
+        "eslint-config"
+    ],
+    "author": "BlackBelt",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/avonmaps/eslint-config-avon-maps/issues"
+    },
+    "homepage": "https://github.com/avonmaps/eslint-config-avon-maps#readme",
+    "dependencies": {
+        "@avon-maps/prettier-config": "github:avonmaps/prettier-config-avon-maps",
+        "@typescript-eslint/eslint-plugin": "2.10.0",
+        "@typescript-eslint/parser": "2.10.0",
+        "eslint": "6.6.0",
+        "eslint-config-airbnb-base": "14.0.0",
+        "eslint-config-prettier": "6.7.0",
+        "eslint-plugin-import": "2.18.2",
+        "eslint-plugin-prettier": "3.1.1",
+        "prettier": "1.19.1"
+    }
+}
