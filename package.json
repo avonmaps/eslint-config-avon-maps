@@ -21,7 +21,7 @@
     },
     "homepage": "https://github.com/avonmaps/eslint-config-avon-maps#readme",
     "dependencies": {
-        "@avon-maps/prettier-config": "github:avonmaps/prettier-config-avon-maps",
+        "@avon-maps/prettier-config": "1.0.0",
         "@typescript-eslint/eslint-plugin": "2.10.0",
         "@typescript-eslint/parser": "2.10.0",
         "eslint": "6.6.0",
