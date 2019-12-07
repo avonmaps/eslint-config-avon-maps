@@ -18,11 +18,17 @@ module.exports = {
         '@typescript-eslint/no-unused-vars': 'off',
         'import/prefer-default-export': 'off',
         'class-methods-use-this': 'off',
+        'no-useless-constructor': 'off',
         'no-param-reassign': 'off',
         'global-require': 'off',
 
+        'no-console': ['warn', { allow: ['warn', 'error'] }],
+        'import/no-extraneous-dependencies': ['error', { devDependencies: ['**/*.spec.ts'] }],
+        '@typescript-eslint/no-use-before-define': ['error', { functions: false, typedefs: false }],
+        '@typescript-eslint/no-useless-constructor': 'error',
         '@typescript-eslint/ban-ts-ignore': 'warn',
-        'max-classes-per-file': ['error', 2],
+        'max-classes-per-file': ['warn', 2],
+        'yoda': 'off',
 
         // Workaround for globals unknown by eslint (e.g. $, kendo)
         'no-undef': 'off',
