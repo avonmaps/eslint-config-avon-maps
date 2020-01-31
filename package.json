@@ -1,6 +1,6 @@
 {
     "name": "@avon-maps/eslint-config-avon-maps",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Common configuration files for eslint",
     "main": "index.js",
     "repository": {
