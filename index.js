@@ -19,6 +19,7 @@ module.exports = {
         'import/prefer-default-export': 'off',
         'class-methods-use-this': 'off',
         'no-useless-constructor': 'off',
+        'no-unused-expressions': 'off',
         'no-param-reassign': 'off',
         'global-require': 'off',
 
@@ -26,9 +27,14 @@ module.exports = {
         'import/no-extraneous-dependencies': ['error', { devDependencies: ['**/*.spec.ts'] }],
         '@typescript-eslint/no-use-before-define': ['error', { functions: false, typedefs: false }],
         '@typescript-eslint/no-useless-constructor': 'error',
+        '@typescript-eslint/no-unused-expressions': 'error',
         '@typescript-eslint/ban-ts-ignore': 'warn',
         'max-classes-per-file': ['warn', 2],
         'yoda': 'off',
+
+        // Note: this is only added to disable the rule for class fields
+        // If a better @typescript-eslint rule is introduced that should be used instead
+        'lines-between-class-members': ['error', 'always', { exceptAfterSingleLine: true }],
 
         // Workaround for globals unknown by eslint (e.g. $, kendo)
         'no-undef': 'off',
