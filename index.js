@@ -46,6 +46,14 @@ module.exports = {
         //     https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-9.html#import-types
         'no-shadow': 'off',
 
+        // Workaround for missing extensions in imports
+        'import/extensions': ['error', 'ignorePackages', {
+            js: 'never',
+            jsx: 'never',
+            ts: 'never',
+            tsx: 'never'
+        }],
+
         'prettier/prettier': [
             'error',
             require('@avon-maps/prettier-config'),
