@@ -60,6 +60,9 @@ module.exports = {
             tsx: 'never'
         }],
 
+        // Disable import/named as imports are also checked by typescript
+        'import/named': 'off',
+
         'prettier/prettier': [
             'error',
             require('@avon-maps/prettier-config'),
