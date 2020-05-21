@@ -24,7 +24,9 @@ module.exports = {
         'global-require': 'off',
 
         'no-console': ['warn', { allow: ['warn', 'error'] }],
-        'import/no-extraneous-dependencies': ['error', { devDependencies: ['**/*.spec.ts', '**/webpack.config.ts'] }],
+        'import/no-extraneous-dependencies': ['error', {
+            devDependencies: ['**/*.spec.ts', '**/webpack.config.ts', '**/karma.conf.ts'],
+        }],
         '@typescript-eslint/no-use-before-define': ['error', { functions: false, typedefs: false }],
         '@typescript-eslint/no-useless-constructor': 'error',
         '@typescript-eslint/no-unused-expressions': 'error',
